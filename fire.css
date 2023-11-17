@@ -1,0 +1,170 @@
+
+
+.navbar {
+    background-color: #08D9D6;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+.navbar-logo img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-brand-name {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.navbar-nav.ml-auto .nav-link {
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.sticky-second-nav {
+    background-color: #EAEAEA;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.sticky-second-nav .navbar-nav .nav-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* Add spacing between sticky navigation items */
+
+
+.container1 {
+    padding: 20px;
+    
+}
+
+
+
+
+
+.container5 {
+    background-color: #252A34;
+    color: white;
+    padding: 10px;
+    
+    
+}
+
+.problem-solution-container {
+   
+    display: flex;
+    justify-content: ;
+}
+
+.problem-solution-container h2 {
+    font-size: 24px;
+  
+    color: white;
+}
+#solution{
+    display: flex;
+    justify-content: end;
+    padding-bottom: 10px;
+    
+}
+
+.problem-image,
+.solution-image {
+    max-width: 100%;
+    padding-bottom: 20px;
+
+  
+}
+
+.problem-list,
+.solution-list {
+    font-size: 18px;
+    color: white;
+}
+.problemsolutionbackgroundimg{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.topic-card {
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+    margin-right: 20px;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: #FF2E63;
+    background-color: #FF2E63;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.threecards{
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+#firesafety {
+    padding-right: 20px;
+}
+
+.topic-image {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.topic-content {
+    padding: 15px;
+}
+
+.topic-title {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.topic-points {
+    font-size: 14px;
+    color: white;
+    line-height: 1.4;
+}
+
+
+/* cc */
+
+
+.topic-card {
+    perspective: 1000px;
+    transition: transform 2s;
+}
+
+.topic-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.registration-form {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+

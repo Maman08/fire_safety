@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        /* Custom styles */
+        a{
+            text-decoration: none;
+        }
+        .navbar {
+            background-color: #08D9D6;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+     
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+            padding-left: 20px;
+        }
+
+        .navbar-logo img {
+            max-height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar-brand-name {
+            font-size: 1.5rem;
+            color: #FFFFFF;
+        }
+
+        .navbar-nav.ml-auto .nav-link {
+            color: #FFFFFF;
+            margin-left: 20px;
+        }
+
+        .sticky-second-nav {
+            background-color: #EAEAEA;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+
+        .sticky-second-nav .navbar-nav .nav-item:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        /* Add spacing between sticky navigation items */
+        
+
+        .container1 {
+            padding: 20px;
+            
+        }
+
+        .container5 {
+            background-color: #252A34;
+            color: white;
+            padding: 10px;
+        }
+
+        .problem-solution-container {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: ;
+            flex-wrap: wrap;
+        }
+
+        .problem-solution-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        #solution{
+            display: flex;
+            justify-content: end;
+        }
+
+        .problem-image,
+        .solution-image {
+            max-width: 100%;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .problem-list,
+        .solution-list {
+            
+            font-size: 18px;
+            color: white;
+            font-family: 'Fira Sans', sans-serif;
+font-family: 'Itim', cursive;
+font-family: 'Rubik Wet Paint', cursive;
+font-family: 'Source Serif 4', serif;
+
+        }
+        .problem-heading{
+            font-family: 'Fira Sans', sans-serif;
+font-family: 'Itim', cursive;
+font-family: 'Rubik Wet Paint', cursive;
+font-size: 30px;
+            
+        }
+        
+        .topic-card {
+            width: 350px;
+            height: 350px;
+            display: inline-block;
+            margin-right: 20px;
+            border: 1px solid #EAEAEA;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: #FF2E63;
+            background-color: #FF2E63;
+            padding-left: 30px;
+            padding-top: 20px;
+        }
+      .threecards{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+        #firesafety {
+            padding-right: 20px;
+        }
+
+        .topic-image {
+            max-width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .topic-content {
+            padding: 15px;
+        }
+
+        .topic-title {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .topic-points {
+            font-size: 14px;
+            color: white;
+            line-height: 1.4;
+        }
+
+      .card-body a{
+        color: #171819;
+      }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="navbar-logo">
+                <img src="companylogo.png" alt="Company Logo">
+                <h1 class="navbar-brand-name">XYZ FIRE SAFETY PRIVATE LIMITED</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-light sticky-second-nav">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MEP Consultation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fire Safety</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HVAC</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+<div class="container5">
+    <!-- Your problem and solution content here -->
+    <div class="problem-solution-container">
+        <div class="problem-image">
+            <img style="border-radius: 50%;" src="problem.jpg" alt="Problem Image" height="250px">
+        </div>
+        <div class="problem-list">
+            <h2 style="font-size: 35px;" class="problem-heading">Problem</h2>
+            <ul >
+                <li>Lack of proper fire alarms, extinguishers, and sprinkler systems.</li>
+                <br>
+            <li>Missing effective evacuation plan.</li>
+            <br>
+            <li>Inefficient HVAC system for smoke control.</li>
+            <br>
+            <li>Inadequate training for occupants on fire safety procedures.</li>
+            <br class="">
+            <li>Failure to conduct regular fire safety inspections and maintenance.</li>
+            </ul>
+        </div>
+    </div>
+     <br>
+     <br>
+    <div class="problem-solution-container" id="solution">
+        <div class="problem-list">
+            <h2 style="font-size: 35px;" class="problem-heading">Solution</h2>
+            <ul>
+                <li>Thorough assessment of fire hazards.</li>
+                <br>
+            <li>Comprehensive fire safety plan tailored to layout and occupancy.</li>
+            <br>
+            <li>Designated escape routes, assembly points, and safe zones.</li>
+            <br>
+            <li>Installation of advanced fire detection and suppression systems.</li>
+            <br>
+            
+            <li>Proactive maintenance of fire safety equipment and systems.</li>
+            </ul>
+        </div>
+        <div class="solution-image">
+            <img style="border-radius: 50%;" src="solution.jpg.crdownload" alt="Solution Image" height="250px">
+        </div>
+    </div>
+   
+
+     <div class="threecards">
+        <a href="mep">
+            <div class="topic-card">
+                <img class="topic-image" src="mep.jpeg" alt="MEP Image">
+                <div class="topic-content">
+                    <h2 class="topic-title">MEP Consultation</h2>
+                    <ul class="topic-points">
+                        <li>Expert advice on Mechanical, Electrical, and Plumbing systems</li>
+                        <li>Optimizing energy efficiency and sustainability</li>
+                        <li>Integration into building design and operation</li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    
+        <a href="hvac">
+            <div class="topic-card">
+                <img class="topic-image" src="hpvac.jpeg" alt="HVAC Image">
+                <div class="topic-content">
+                    <h2 class="topic-title">HVAC</h2>
+                    <ul class="topic-points">
+                        <li>Regulating indoor comfort and air quality</li>
+                        <li>Temperature, humidity, and air circulation control</li>
+                        <li>Preventing moisture buildup and fire hazards</li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    
+        <a href="firesafety">
+            <div class="topic-card" id="firesafety">
+                <img class="topic-image" src="firesafety.jpeg" alt="Fire Safety Image">
+                <div class="topic-content">
+                    <h2 class="topic-title">Fire Safety</h2>
+                    <ul class="topic-points">
+                        <li>Implementing fire detection and suppression systems</li>
+                        <li>Developing evacuation plans and training occupants</li>
+                        <li>Maintaining readiness and minimizing fire risks</li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </div>
+
+     </div>
+
+
+
+
+     <footer class="footer" style="background-color: #171819; color: #171819; padding: 20px;">
+        <div class="container" style="padding: 50px;">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white" style="height: 100%;">
+                        <!-- ... (card content) ... -->
+                        <div class="card-body">
+                            <h4 class="card-title">About Us</h4>
+                            <p class="card-text">XYZ Fire Protection Pvt Ltd. is among the best companies in the industry for providing solutions and services of Fire Safety Solutions, Fire Suppression Systems, MEP Consultation Services, HVAC System Services, and Solid Waste Management Systems and Safety Audits & Safety Trainings are engaged in offering Solutions, Services and Maintenance, among others. We pride ourselves in providing these services in the most efficient manner and also for the timely execution and customized installation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white" style="height: 100%;">
+                        <!-- ... (card content) ... -->
+                        <div class="card-body">
+                            <h4 class="card-title">Our Category</h4>
+                            <ul class="list-group list-group-flush">
+                                <a href=""><li class="list-group-item">MEP Consultation</li></a>
+                                <a href=""><li class="list-group-item">HVAC System</li></a>
+                                <a href=""><li class="list-group-item">Fire System Installation</li></a>
+                                <a href=""><li class="list-group-item">Service And Maintenance</li></a>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white" style="height: 100%;">
+                        <!-- ... (card content) ... -->
+                        <div class="card-body">
+                            <h4 class="card-title">Quick Links</h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="#">Home</a></li>
+                                <li class="list-group-item"><a href="#">About Us</a></li>
+                                <li class="list-group-item"><a href="#">Our Team</a></li>
+                                <li class="list-group-item"><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        
+
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card bg-dark text-white" style="height: 100%;">
+                        <!-- ... (card content) ... -->
+                        <div class="card-body">
+                            <h4 class="card-title">Contact Us</h4>
+                            <p class="card-text">Address : Mallwshwra Hills, Kumarswamy Layout,Banglore</p>
+                            <p class="card-text">Phone: <a style="color:white;" href="tel:+1234567890">Call us at 6306426319</a></p>
+                            <p class="card-text">Email: <a style="color:white;" href="mailto:info@example.com">Email us at info@example.com</a>
+                            </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+    
+    
+  
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>
